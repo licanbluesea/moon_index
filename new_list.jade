@@ -1,0 +1,69 @@
+doctype html
+html
+    head
+        title= ""
+        meta(charset="utf-8")
+        link(rel='stylesheet',href="assets/css/base.css")
+        link(rel='stylesheet',href="assets/css/index.css")
+    body
+        #content
+            include ./banner.jade
+            .con
+                include ./left_bar.jade
+                .rightbar
+
+                    .bar_box.noborde
+                        .news_title
+                            span
+                                input(type="text",size="15")
+                                input.sub(type="submit",value="搜索")
+                                //select
+                            h3 官方新闻
+                         mixin news_list()
+                             li
+                                 a
+                                     span.time 8/11
+                                     span 【公告】
+                                     | 8月11日 Xoyobox平台10:30至11:00充值維護
+
+
+
+
+                        .news_con
+                            ul
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                               + news_list
+                            .page_list
+                                a.pre <
+                                a 1
+                                a 2
+                                a 3
+                                a 3
+                                a 3
+                                a 3
+                                a 3
+                                a.next >
+
+
+
+
+
+
+
+
+        include ./common.jade

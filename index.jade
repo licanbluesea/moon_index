@@ -1,0 +1,179 @@
+doctype html
+html
+    head
+        title= ""
+        meta(charset="utf-8")
+        link(rel='stylesheet',href="assets/css/base.css")
+        link(rel='stylesheet',href="assets/css/index.css")
+    body
+        #content
+            include ./banner.jade
+
+            .con
+                include ./left_bar.jade
+                .rightbar
+                    .bar_box
+                        .new_tab
+                           ul.new_title
+                             li.all_new.cur
+                                span(style="display:block")
+                                    a more⇛
+                             li.new_act
+                                span
+                                    a more⇛
+                             li.new_game
+                                span
+                                    a more⇛
+                             li.new_ad
+                                span
+                                    a more⇛
+                           .hot
+                             div.img
+                                img(width="155",height="120")
+                             div.dec
+                                h3 Xoyobox平台10:30至11:00充值維護
+                                span 内容内容内容内容内容内容内容内容内容内内容内容内容
+                                a.more_btn
+                            mixin news_con()
+                                div(style="dislay:none")
+                                    ul
+                                        li
+                                            a
+                                                span 08/11
+                                                | 【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                                        li
+                                            a
+                                                span 08/11
+                                                | 【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                                        li
+                                            a
+                                                span 08/11
+                                                | 【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                                        li
+                                            a
+                                                span 08/11
+                                                | 【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                           .new_con
+                                +news_con
+                                +news_con
+                                +news_con
+                                +news_con
+
+                        .new_ad
+                            div
+                                a
+                                    img(width="225",height="85")
+                            div
+                                a
+                                    img(width="225",height="85")
+                            h3
+                                a 廣告主題標題標題增加吸引度哦
+                            span
+                                | 内容内容内容内容内容内容内容内容内容内内容内容内容
+                    .bar_box
+                        .bar_title
+                            a.more more⇛
+                            | 特色系统
+                        .bar_con
+                            ul.character
+                                li
+                                  a
+                                    div.img
+                                        img(width="155",height="65")
+                                    div.dec
+                                        h3 特使系统
+                                        span 内容内容内容内容内容内容内容内容内容内内容内容内容
+                                li
+                                  a
+                                    div.img
+                                        img(width="155",height="65")
+                                    div.dec
+                                        h3 特使系统
+                                        span 内容内容内容内容内容内容内容内容内容内内容内容内容
+                                li
+                                  a
+                                    div.img
+                                        img(width="155",height="65")
+                                    div.dec
+                                        h3 特使系统
+                                        span 内容内容内容内容内容内容内容内容内容内内容内容内容
+                                li
+                                  a
+                                    div.img
+                                        img(width="155",height="65")
+                                    div.dec
+                                        h3 特使系统
+                                        span 内容内容内容内容内容内容内容内容内容内内容内容内容
+
+                    .bar_box
+                        .bar_title.game_title
+                            a.more more⇛
+                            | 游戏攻略
+                        .bar_con
+                            .tab_con
+                                div
+                                    .img
+                                        img(width="160",height="160")
+                                    .dec
+                                        h3 Xoyobox平台10:30至11:00充值維護
+                                        span 内容内容内容内容内容内容内容内容内容内内容内容内容
+                                        span.more_btn
+                                        ul
+                                            li
+                                                a 【攻略】 8月11日 Xoyobox平台10:30至11:00充值維護內容內
+                                            li
+                                                a 【攻略】 8月11日 Xoyobox平台10:30至11:00充值維護內容內
+                            .tab_title
+                                ul
+                                    li
+                                        a.cur 新手入門
+                                    li
+                                        a 遊戲介紹
+                                    li
+                                        a 系統需求
+                                    li
+                                        a 江湖之路
+
+                    .bar_box
+                        .bar_title.bbs 玩家讨论区
+                        .bar_con
+                            ul.com_img
+                                li
+                                    a
+                                        img(width="160",height="55")
+                                    a 名字
+                                li
+                                    a
+                                        img(width="160",height="55")
+                                    a 名字名字
+                                li
+                                    a
+                                        img(width="160",height="55")
+                                    a 名字名字
+                                li
+                                    a
+                                        img(width="160",height="55")
+                                    a 名字名字
+                    .bar_box.noborde
+                        .bar_title.cooper 合作伙伴
+                        .bar_con
+                            ul.com_img
+                                li
+                                    a
+                                        img(width="160",height="55")
+
+                                li
+                                    a
+                                        img(width="160",height="55")
+
+                                li
+                                    a
+                                        img(width="160",height="55")
+
+                                li
+                                    a
+                                        img(width="160",height="55")
+
+
+
+        include ./common.jade

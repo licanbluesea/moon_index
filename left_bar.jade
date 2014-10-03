@@ -1,0 +1,172 @@
+.leftbar
+    .game_star
+        a(href="#",target="_blank")
+            img(width="256",height="207",src="assets/images/game_down.jpg")
+    .game_favour
+        ul
+            li
+                a 免费新手礼包
+            li
+                a 充值优惠
+    .user_box
+        .inner_userpanel.user_area
+            .user_title
+                ul
+                    li.log.cur 账号登录
+                    li.reg 账号注册
+            .user_con
+                div.login_form_ui
+                    table
+                        tr
+                            td
+                                input.text.account(type="text",placeholder="請輸入賬號或電郵")
+                            td(rowspan="2")
+                                button.btn.submit_btn 立即登人
+                        tr
+                            td
+                                input.text.password(type="password",placeholder="輸入密碼")
+                        tr.login_captcha(style="display:none")
+                            td
+                                input.text.captcha(type="text",placeholder="輸入驗證碼")
+                            td 請書寫驗證碼
+                        tr.login_captcha(style="display:none")
+                            td(colspan="2")
+                                span.login_captcha_img
+                                    img(width="105",height="40")
+                                a(href="javascript:$('.login_captcha_img img').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=login&t=1411699342&tt='+(new Date()).getTime());") （看不清驗證碼?）
+                        tr
+                            td(colspan="2")
+                                a(href="https://hk.xoyobox.com/findPassword.html",target="_blank") 忘記密碼
+                div.register_form_ui(style="display:none")
+                    table
+                        tr
+                            td
+                                input.text(type="text",name="account",placeholder="輸入郵箱作為賬號")
+                            td(rowspan="2")
+                                button.btn.submit_btn 立即註冊
+                        tr
+                            td
+                                input.text(type="password",name="password",placeholder="輸入密碼")
+                        tr
+                            td
+                                input.text(type="password",name="repeat",placeholder="再次輸入密碼")
+                            td
+                        tr
+                            td
+                                select(width="100",name="areaId")
+                                    option(value="1",selected) 香港
+                                    option(value="2") 马来西亚
+                                    option(value="3") 台湾
+                            td
+                        tr
+                            td
+                                input.text(type="text",name="captcha")
+                            td 請書寫驗證碼
+                        tr
+                            td(colspan="2")
+                                img#registCodeImg(width="105",height="40",src="https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist")
+                                a(href="javascript:$('#registCodeImg').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist&t=1411699342&tt='+(new Date()).getTime());") （看不清驗證碼?）
+
+                        tr
+                            td(colspan="2")
+                                p
+                                    input(type='checkbox', name='agreement', checked='checked')
+                                    |     同意
+                                    a(style='text-decoration: underline;', target='_blank', href='/terms-of-service.html') 服務條款
+                                    | 及
+                                    a(href='/privacy.html', style='text-decoration: underline;', target='_blank') 隱私條款;
+                        tr
+                            td(colspan="2")
+                                p
+                                    input(type='checkbox', name='subscribe', checked='checked')
+                                    | 免費接受禮物及資訊
+        .login_my.inner_userpanel
+                p
+                    | &#x8CEC;&#x865F;&#xFF1A;
+                    i
+                     b.account_name
+                p
+                    | &#x60A8;&#x8CEC;&#x865F;&#x4E2D;&#x5269;&#x9918;&#x7684;XOYO&#x9EDE;&#x6578;&#xFF1A;
+                    b.account_cur 0&#x9EDE;
+                p.play_game
+                    | &#x4E0A;&#x6B21;&#x767B;&#x5165;&#x7684;&#x904A;&#x6232;&#xFF1A;
+                    b.game_name
+                p.play_game
+                    | &#x767B;&#x5165;&#x7684;&#x4F3A;&#x670D;&#x5668;&#xFF1A;
+                    b.game_ser
+                p.no_gamme(style='display:none') &#x60A8;&#x5C1A;&#x672A;&#x901A;&#x904E;XOYOBOX&#x5E73;&#x81FA;&#x767B;&#x5165;&#x4EFB;&#x4F55;&#x4E00;&#x6B3E;&#x904A;&#x6232;.
+                .user_setting
+                    ul
+                        li
+                            a(href='https://www.xoyobox.com/member.html', target='_blank') &#x904A;&#x6232;&#x7BA1;&#x7406;
+                        li
+                            a(href='https://www.xoyobox.com/member-pay.html', target='_blank') &#x5145;&#x503C;&#x8CFC;&#x9EDE;
+                        li
+                            a(href='https://www.xoyobox.com/member-support.html', target='_blank') &#x6211;&#x7684;&#x63D0;&#x554F;
+                    ul
+                        li
+                            a(href='https://www.xoyobox.com/member-cpsw.html', target='_blank') &#x4FEE;&#x6539;&#x5BC6;&#x78BC;
+                        li
+                            a(href='https://www.xoyobox.com/member-misc.html', target='_blank') &#x8CEC;&#x6236;&#x8CC7;&#x6599;
+                        li
+                            a(href='https://www.xoyobox.com/member-changeEmail.html', target='_blank') &#x96FB;&#x90F5;&#x8A8D;&#x8B49;
+
+                    a.login_out(href='javascript:pageUI.logout();') &#x767B;&#x51FA;&#x8CEC;&#x865F;
+
+        .thrid_party
+                | 其他账号登入|
+                span
+                    a(href="javascript:void(0);",title="Facebook",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('facebook','4K3LDE2Tf/p1lzzKj5zGx85qX4c=',$(this),'redirect_yjm1');")
+                        img.icon(width="16",height="16",src="https://hk.xoyobox.com/uploads/files/2013/09/c67fc9dacf79d59999ba3c5572bf2c40.png")
+                span
+                    a(href="javascript:void(0);",title="Google",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('google','y9SNxRVkKHzB5Nl4XjDuhO4k5BY=',$(this),'redirect_yjm1');")
+                        img.icon(width="16",height="16",src="https://hk.xoyobox.com/uploads/files/2013/09/6122f19681d8eda9e1e3f07371349efe.png")
+                span
+                    a(href="javascript:void(0);",title="Hotmail",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('hotmail','1nNFRRojJZDEPXk6mcLzYkRquhk=',$(this),'redirect_yjm1');")
+                        img.icon(width="16",height="16",src="https://hk.xoyobox.com/uploads/files/2013/09/005e5780a32cff6e1c32010b8de6cda5.png")
+                span
+                    a(href="javascript:void(0);",title="雅虎",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('yahoo','oqUKQ5AOa2ccyiV4G2/lcwRh4oU=',$(this),'redirect_yjm1');")
+                        img.icon(width="16",height="16",src="https://hk.xoyobox.com/uploads/files/2013/09/10b115b1db537a9cc6ed7b9f36f8feb8.png")
+                span
+                    a(href="javascript:void(0);",title="Gamebase",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('gamebase','RztFdxwkvNQgx/JkguDmqvWO2R8=',$(this),'redirect_yjm1');")
+                        img.icon(width="16",height="16",src="https://hk.xoyobox.com/uploads/files/2013/09/8f312e16625223972ef2c98a84f56933.png")
+    .column_box
+        .column_title 服务器列表
+        .column_con
+            ul
+                li.hot
+                    span.go go
+                    span 08/12
+                    | S48伺服表伺服表
+                li.new
+                    span.go go
+                    span 08/12
+                    | S48伺服表伺服表
+                li
+                    span.go go
+                    span 08/12
+                    | S48伺服表伺服表
+                li
+                    span.go go
+                    span 08/12
+                    | S48伺服表伺服表
+    .column_box
+        .column_title.custom 客服专区
+        .column_con
+            | 遊戲維護時間：【每週二】9:00—11:00
+            span.email 客服郵箱：lican@kingsoft.com
+            span.phone 客服電話：12345678
+    .column_box.fb_box
+        .column_title.fb_title 在Facebook上寻找我们
+        .column_con.fb_con
+            script.
+                (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=563023350424515";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            .fb-like-box(data-href='https://www.facebook.com/xoyobox', data-width='230', data-show-faces='true', data-header='false', data-stream='false', data-show-border='false')
+
+

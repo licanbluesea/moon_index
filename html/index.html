@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+<div id="content">
+<div class="banner">
+    <div class="img slider">
+        <div data-src="assets/images/banner/bg1.jpg" class="slide">
+        </div>
+        <div data-src="assets/images/banner/bg2.jpg" class="slide">
+        </div>
+        <div data-src="assets/images/banner/bg4.jpg" class="slide">
+        </div>
+        <div data-src="assets/images/banner/bg5.jpg" class="slide">
+        </div>
+    </div>
+</div>
+<div class="con">
+<div class="leftbar">
+<div class="game_star">
+    <a href="#" target="_blank">
+        <img width="256" height="207" src="assets/images/game_down.jpg">
+    </a>
+</div>
+<div class="game_favour">
+    <ul>
+        <li>
+            <a>
+                免费新手礼包
+            </a>
+        </li>
+        <li>
+            <a>
+                充值优惠
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="user_box">
+<div class="inner_userpanel user_area">
+    <div class="user_title">
+        <ul>
+            <li class="log cur">
+                账号登录
+            </li>
+            <li class="reg">
+                账号注册
+            </li>
+        </ul>
+    </div>
+    <div class="user_con">
+        <div class="login_form_ui">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="請輸入賬號或電郵" class="text account">
+                    </td>
+                    <td rowspan="2">
+                        <button class="btn submit_btn">
+                            立即登人
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="輸入密碼" class="text password">
+                    </td>
+                </tr>
+                <tr style="display:none" class="login_captcha">
+                    <td>
+                        <input type="text" placeholder="輸入驗證碼" class="text captcha">
+                    </td>
+                    <td>
+                        請書寫驗證碼
+                    </td>
+                </tr>
+                <tr style="display:none" class="login_captcha">
+                    <td colspan="2">
+                                                <span class="login_captcha_img">
+                                                    <img width="105" height="40">
+                                                </span>
+                        <a href="javascript:$('.login_captcha_img img').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=login&amp;t=1411699342&amp;tt='+(new Date()).getTime());">
+                            （看不清驗證碼?）
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://hk.xoyobox.com/findPassword.html" target="_blank">
+                            忘記密碼
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="display:none" class="register_form_ui">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="account" placeholder="輸入郵箱作為賬號" class="text">
+                    </td>
+                    <td rowspan="2">
+                        <button class="btn submit_btn">
+                            立即註冊
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" placeholder="輸入密碼" class="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="repeat" placeholder="再次輸入密碼" class="text">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select width="100" name="areaId">
+                            <option value="1" selected>
+                                香港
+                            </option>
+                            <option value="2">
+                                马来西亚
+                            </option>
+                            <option value="3">
+                                台湾
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="captcha" class="text">
+                    </td>
+                    <td>
+                        請書寫驗證碼
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img id="registCodeImg" width="105" height="40" src="https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist">
+                        <a href="javascript:$('#registCodeImg').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist&amp;t=1411699342&amp;tt='+(new Date()).getTime());">
+                            （看不清驗證碼?）
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>
+                            <input type="checkbox" name="agreement" checked="checked">
+                            同意
+                            <a style="text-decoration: underline;" target="_blank" href="/terms-of-service.html">
+                                服務條款
+                            </a>
+                            及
+                            <a href="/privacy.html" style="text-decoration: underline;" target="_blank">
+                                隱私條款;
+                            </a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>
+                            <input type="checkbox" name="subscribe" checked="checked">
+                            免費接受禮物及資訊
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="login_my inner_userpanel">
+    <p>
+        &#x8CEC;&#x865F;&#xFF1A;
+        <i>
+            <b class="account_name">
+            </b>
+        </i>
+    </p>
+    <p>
+        &#x60A8;&#x8CEC;&#x865F;&#x4E2D;&#x5269;&#x9918;&#x7684;XOYO&#x9EDE;&#x6578;&#xFF1A;
+        <b class="account_cur">
+            0&#x9EDE;
+        </b>
+    </p>
+    <p class="play_game">
+        &#x4E0A;&#x6B21;&#x767B;&#x5165;&#x7684;&#x904A;&#x6232;&#xFF1A;
+        <b class="game_name">
+        </b>
+    </p>
+    <p class="play_game">
+        &#x767B;&#x5165;&#x7684;&#x4F3A;&#x670D;&#x5668;&#xFF1A;
+        <b class="game_ser">
+        </b>
+    </p>
+    <p style="display:none" class="no_gamme">
+        &#x60A8;&#x5C1A;&#x672A;&#x901A;&#x904E;XOYOBOX&#x5E73;&#x81FA;&#x767B;&#x5165;&#x4EFB;&#x4F55;&#x4E00;&#x6B3E;&#x904A;&#x6232;.
+    </p>
+    <div class="user_setting">
+        <ul>
+            <li>
+                <a href="https://www.xoyobox.com/member.html" target="_blank">
+                    &#x904A;&#x6232;&#x7BA1;&#x7406;
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xoyobox.com/member-pay.html" target="_blank">
+                    &#x5145;&#x503C;&#x8CFC;&#x9EDE;
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xoyobox.com/member-support.html" target="_blank">
+                    &#x6211;&#x7684;&#x63D0;&#x554F;
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.xoyobox.com/member-cpsw.html" target="_blank">
+                    &#x4FEE;&#x6539;&#x5BC6;&#x78BC;
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xoyobox.com/member-misc.html" target="_blank">
+                    &#x8CEC;&#x6236;&#x8CC7;&#x6599;
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xoyobox.com/member-changeEmail.html" target="_blank">
+                    &#x96FB;&#x90F5;&#x8A8D;&#x8B49;
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:pageUI.logout();" class="login_out">
+            &#x767B;&#x51FA;&#x8CEC;&#x865F;
+        </a>
+    </div>
+</div>
+<div class="thrid_party">
+    其他账号登入|
+                            <span>
+                                <a href="javascript:void(0);" title="Facebook" onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('facebook','4K3LDE2Tf/p1lzzKj5zGx85qX4c=',$(this),'redirect_yjm1');">
+                                    <img width="16" height="16" src="https://hk.xoyobox.com/uploads/files/2013/09/c67fc9dacf79d59999ba3c5572bf2c40.png"
+                                         class="icon">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="javascript:void(0);" title="Google" onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('google','y9SNxRVkKHzB5Nl4XjDuhO4k5BY=',$(this),'redirect_yjm1');">
+                                    <img width="16" height="16" src="https://hk.xoyobox.com/uploads/files/2013/09/6122f19681d8eda9e1e3f07371349efe.png"
+                                         class="icon">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="javascript:void(0);" title="Hotmail" onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('hotmail','1nNFRRojJZDEPXk6mcLzYkRquhk=',$(this),'redirect_yjm1');">
+                                    <img width="16" height="16" src="https://hk.xoyobox.com/uploads/files/2013/09/005e5780a32cff6e1c32010b8de6cda5.png"
+                                         class="icon">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="javascript:void(0);" title="雅虎" onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('yahoo','oqUKQ5AOa2ccyiV4G2/lcwRh4oU=',$(this),'redirect_yjm1');">
+                                    <img width="16" height="16" src="https://hk.xoyobox.com/uploads/files/2013/09/10b115b1db537a9cc6ed7b9f36f8feb8.png"
+                                         class="icon">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="javascript:void(0);" title="Gamebase" onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('gamebase','RztFdxwkvNQgx/JkguDmqvWO2R8=',$(this),'redirect_yjm1');">
+                                    <img width="16" height="16" src="https://hk.xoyobox.com/uploads/files/2013/09/8f312e16625223972ef2c98a84f56933.png"
+                                         class="icon">
+                                </a>
+                            </span>
+</div>
+</div>
+<div class="column_box">
+    <div class="column_title">
+        服务器列表
+    </div>
+    <div class="column_con">
+        <ul>
+            <li class="hot">
+                                    <span class="go">
+                                        go
+                                    </span>
+                                    <span>
+                                        08/12
+                                    </span>
+                S48伺服表伺服表
+            </li>
+            <li class="new">
+                                    <span class="go">
+                                        go
+                                    </span>
+                                    <span>
+                                        08/12
+                                    </span>
+                S48伺服表伺服表
+            </li>
+            <li>
+                                    <span class="go">
+                                        go
+                                    </span>
+                                    <span>
+                                        08/12
+                                    </span>
+                S48伺服表伺服表
+            </li>
+            <li>
+                                    <span class="go">
+                                        go
+                                    </span>
+                                    <span>
+                                        08/12
+                                    </span>
+                S48伺服表伺服表
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="column_box">
+    <div class="column_title custom">
+        客服专区
+    </div>
+    <div class="column_con">
+        遊戲維護時間：【每週二】9:00—11:00
+                            <span class="email">
+                                客服郵箱：lican@kingsoft.com
+                            </span>
+                            <span class="phone">
+                                客服電話：12345678
+                            </span>
+    </div>
+</div>
+<div class="column_box fb_box">
+    <div class="column_title fb_title">
+        在Facebook上寻找我们
+    </div>
+    <div class="column_con fb_con">
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=563023350424515";
+                fjs.parentNode.insertBefore(js, fjs);
+            } (document, 'script', 'facebook-jssdk'));
+        </script>
+        <div data-href="https://www.facebook.com/xoyobox" data-width="230" data-show-faces="true"
+             data-header="false" data-stream="false" data-show-border="false" class="fb-like-box">
+        </div>
+    </div>
+</div>
+</div>
+<div class="rightbar">
+<div class="bar_box">
+<div class="new_tab">
+    <ul class="new_title">
+        <li class="all_new cur">
+                                    <span style="display:block">
+                                        <a>
+                                            more⇛
+                                        </a>
+                                    </span>
+        </li>
+        <li class="new_act">
+                                    <span>
+                                        <a>
+                                            more⇛
+                                        </a>
+                                    </span>
+        </li>
+        <li class="new_game">
+                                    <span>
+                                        <a>
+                                            more⇛
+                                        </a>
+                                    </span>
+        </li>
+        <li class="new_ad">
+                                    <span>
+                                        <a>
+                                            more⇛
+                                        </a>
+                                    </span>
+        </li>
+    </ul>
+    <div class="hot">
+        <div class="img">
+            <img width="155" height="120">
+        </div>
+        <div class="dec">
+            <h3>
+                Xoyobox平台10:30至11:00充值維護
+            </h3>
+                                    <span>
+                                        内容内容内容内容内容内容内容内容内容内内容内容内容
+                                    </span>
+            <a class="more_btn">
+            </a>
+        </div>
+    </div>
+    <div class="new_con">
+        <div style="dislay:none">
+            <ul>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="dislay:none">
+            <ul>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="dislay:none">
+            <ul>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="dislay:none">
+            <ul>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+                <li>
+                    <a>
+                                                <span>
+                                                    08/11
+                                                </span>
+                        【公告】 8月11日 Xoyobox平台10:30至11:00充值維護
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="new_ad">
+    <div>
+        <a>
+            <img width="225" height="85">
+        </a>
+    </div>
+    <div>
+        <a>
+            <img width="225" height="85">
+        </a>
+    </div>
+    <h3>
+        <a>
+            廣告主題標題標題增加吸引度哦
+        </a>
+    </h3>
+                            <span>
+                                内容内容内容内容内容内容内容内容内容内内容内容内容
+                            </span>
+</div>
+</div>
+<div class="bar_box">
+    <div class="bar_title">
+        <a class="more">
+            more⇛
+        </a>
+        特色系统
+    </div>
+    <div class="bar_con">
+        <ul class="character">
+            <li>
+                <a>
+                    <div class="img">
+                        <img width="155" height="65">
+                    </div>
+                    <div class="dec">
+                        <h3>
+                            特使系统
+                        </h3>
+                                            <span>
+                                                内容内容内容内容内容内容内容内容内容内内容内容内容
+                                            </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="img">
+                        <img width="155" height="65">
+                    </div>
+                    <div class="dec">
+                        <h3>
+                            特使系统
+                        </h3>
+                                            <span>
+                                                内容内容内容内容内容内容内容内容内容内内容内容内容
+                                            </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="img">
+                        <img width="155" height="65">
+                    </div>
+                    <div class="dec">
+                        <h3>
+                            特使系统
+                        </h3>
+                                            <span>
+                                                内容内容内容内容内容内容内容内容内容内内容内容内容
+                                            </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="img">
+                        <img width="155" height="65">
+                    </div>
+                    <div class="dec">
+                        <h3>
+                            特使系统
+                        </h3>
+                                            <span>
+                                                内容内容内容内容内容内容内容内容内容内内容内容内容
+                                            </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="bar_box">
+    <div class="bar_title game_title">
+        <a class="more">
+            more⇛
+        </a>
+        游戏攻略
+    </div>
+    <div class="bar_con">
+        <div class="tab_con">
+            <div>
+                <div class="img">
+                    <img width="160" height="160">
+                </div>
+                <div class="dec">
+                    <h3>
+                        Xoyobox平台10:30至11:00充值維護
+                    </h3>
+                                        <span>
+                                            内容内容内容内容内容内容内容内容内容内内容内容内容
+                                        </span>
+                                        <span class="more_btn">
+                                        </span>
+                    <ul>
+                        <li>
+                            <a>
+                                【攻略】 8月11日 Xoyobox平台10:30至11:00充值維護內容內
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                【攻略】 8月11日 Xoyobox平台10:30至11:00充值維護內容內
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab_title">
+            <ul>
+                <li>
+                    <a class="cur">
+                        新手入門
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        遊戲介紹
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        系統需求
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        江湖之路
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bar_box">
+    <div class="bar_title bbs">
+        玩家讨论区
+    </div>
+    <div class="bar_con">
+        <ul class="com_img">
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+                <a>
+                    名字
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+                <a>
+                    名字名字
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+                <a>
+                    名字名字
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+                <a>
+                    名字名字
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="bar_box noborde">
+    <div class="bar_title cooper">
+        合作伙伴
+    </div>
+    <div class="bar_con">
+        <ul class="com_img">
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img width="160" height="55">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div id="top">
+    <div id="xoyobox_header">
+    </div>
+</div>
+<div id="foot">
+    <div class="v1_xishan_footer">
+        <div class="v1_xishan_footer_page">
+            <h2 class="v1_xishan_footer_logo">
+                <a href="https://www.xoyobox.com/" target="_blank">
+                    <img src="http://zt.xoyobox.com/20131223_jxsj/images/bot_logo.png" alt="西山居">
+                </a>
+            </h2>
+            <p class="v1_xishan_footer_info">
+                copyright&copy; 2013 WEST HOUSE CORPORATION LIMITED &#x7248;&#x6B0A;&#x6240;&#x6709;
+                &#x4E0D;&#x5F97;&#x8F49;&#x8F09;
+            </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://zhcdn01.xoyo.com/assets/lib/jquery/jquery.1.7.2.js"
+        charset="utf-8">
+</script>
+<script type="text/javascript" src="https://hk.xoyobox.com/?XoyoboxHeaderV2.js">
+</script>
+<!-- 焦点图-->
+<script type="text/javascript" src="./assets/js/banner/transit.js">
+</script>
+<script type="text/javascript" src="./assets/js/banner/simpleSlider.js">
+</script>
+<script type="text/javascript" src="./assets/js/banner/backstretch.js">
+</script>
+<!-- 焦点图-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="https://hk.xoyobox.com/script/placeholder.jquery.js">
+</script>
+<![endif]-->
+<script type="text/javascript" src="./assets/js/page_effect.js">
+</script>
+<script type="text/javascript" src="./assets/js/page_plugin.js">
+</script>
+</body>
+
+</html>
