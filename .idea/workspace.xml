@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="29" selection-start="7597" selection-end="7618" vertical-scroll-proportion="-22.04" vertical-offset="2831" max-vertical-offset="3496">
+            <state line="178" column="29" selection-start="7597" selection-end="7618" vertical-scroll-proportion="2.8857143" vertical-offset="1463" max-vertical-offset="3496">
               <folding />
             </state>
           </provider>
@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="328" selection-end="422" vertical-scroll-proportion="0.47723705" vertical-offset="190" max-vertical-offset="11267">
+            <state line="25" column="3" selection-start="362" selection-end="362" vertical-scroll-proportion="191.60378" vertical-offset="10630" max-vertical-offset="11267">
               <folding>
                 <element signature="e#2312#2894#0" expanded="false" />
               </folding>
@@ -272,7 +272,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28219178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -639,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="29" selection-start="7597" selection-end="7618" vertical-scroll-proportion="-22.04" vertical-offset="2831" max-vertical-offset="3496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="43" selection-start="1104" selection-end="1110" vertical-scroll-proportion="-15.2" vertical-offset="0" max-vertical-offset="551">
@@ -655,10 +648,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="328" selection-end="422" vertical-scroll-proportion="0.47723705" vertical-offset="190" max-vertical-offset="11267">
+        <state line="25" column="3" selection-start="362" selection-end="362" vertical-scroll-proportion="191.60378" vertical-offset="10630" max-vertical-offset="11267">
           <folding>
             <element signature="e#2312#2894#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="29" selection-start="7597" selection-end="7618" vertical-scroll-proportion="2.8857143" vertical-offset="1463" max-vertical-offset="3496">
+          <folding />
         </state>
       </provider>
     </entry>
